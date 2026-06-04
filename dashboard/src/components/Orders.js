@@ -1,0 +1,97 @@
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import axios from "axios";
+
+const Orders = () => {
+  const [orders, setOrders] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchOrders = async () => {
+      try {
+        const response = await axios.get("http://localhost:3002/allOrders");
+        setOrders(response.data);
+      } catch (err) {
+        console.error("Error fetching orders:", err);
+        setError("Failed to load orders. Please try again.");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchOrders();
+  }, []);
+
+  // Loading state
+  if (loading) {
+    return (
+      <div className="orders">
+        <div className="no-orders">
+          <p>Loading orders...</p>
+        </div>
+      </div>
+    );
+  }
+
+  // Error state
+  if (error) {
+    return (
+      <div className="orders">
+        <div className="no-orders">
+          <p>{error}</p>
+          <Link to={"/"} className="btn">Go Back</Link>
+        </div>
+      </div>
+    );
+  }
+
+  // Empty state
+  if (orders.length === 0) {
+    return (
+      <div className="orders">
+        <div className="no-orders">
+          <p>You haven't placed any orders today</p>
+          <Link to={"/"} className="btn">Get started</Link>
+        </div>
+      </div>
+    );
+  }
+
+  // Orders table
+  return (
+    <div className="orders">
+      <h3>My Orders</h3>
+      <table className="table table-striped">
+        <thead>
+          <tr>
+            <th>Stock</th>
+            <th>Qty</th>
+            <th>Price (₹)</th>
+            <th>Mode</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          {orders.map((order, index) => (
+            <tr key={index}>
+              <td>{order.name}</td>
+              <td>{order.qty}</td>
+              <td>{order.price ?? "N/A"}</td>
+              <td>
+                <span className={order.mode === "BUY" ? "tag-buy" : "tag-sell"}>
+                  {order.mode}
+                </span>
+              </td>
+              <td>
+                <span className="tag-executed">Executed</span>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+};
+
+export default Orders;
