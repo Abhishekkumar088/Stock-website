@@ -6,7 +6,7 @@ function Universe() {
       <div className="text-center">
         <p className="fs-4 mb-5 fw-normal ">
           Want to know more about our technology stack? Check out the{" "}
-          <a href="#" className="text-decoration-none">
+          <a href="https://example.com" className="text-decoration-none">
             Zerodha.tech
           </a>{" "}
           blog.

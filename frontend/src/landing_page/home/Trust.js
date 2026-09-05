@@ -18,7 +18,7 @@ function Trust() {
           <p className="opacity-75">
             No gimmicks, spam, "gamification", or annoying push notifications.
             High quality apps that you use at your pace, the way you like.
-            <a href="#" className="text-decoration-none">
+            <a href="https://example.com" className="text-decoration-none">
               Our philosophies
             </a>
             .
@@ -33,11 +33,11 @@ function Trust() {
           <h3>Do better with money</h3>
           <p className="opacity-75">
             With initiatives like{" "}
-            <a href="#" className="text-decoration-none">
+            <a href="https://example.com" className="text-decoration-none">
               Nudge
             </a>{" "}
             and{" "}
-            <a href="#" className="text-decoration-none">
+            <a href="https://example.com" className="text-decoration-none">
               Kill switch
             </a>
             , we don't just facilitate transactions, but actively help you do
@@ -51,18 +51,18 @@ function Trust() {
             className="companyImage m-4"
           ></img>
           <p className="links">
-            <a href="#" className="text-decoration-none">
+            <a href="https://example.com" className="text-decoration-none">
               Explore our products<i className="fa-solid fa-arrow-right"></i>
             </a>
             &nbsp;
-            <a href="#" className="text-decoration-none">
+            <a href="https://example.com" className="text-decoration-none">
               Try Kite demo <i className="fa-solid fa-arrow-right"></i>
             </a>
           </p>
         </div>
       </div>
       <div className="press">
-        <a href="#">
+        <a href="https://example.com">
           <img src="media/images/pressImage.png"></img>
         </a>
       </div>

@@ -9,7 +9,7 @@ function Hero() {
 
         <p>
           Check out our &nbsp;
-          <a href="#" className="text-decoration-none">
+          <a href="https://example.com" className="text-decoration-none">
             investment offerings <i class="fa-solid fa-arrow-right"></i>
           </a>
         </p>

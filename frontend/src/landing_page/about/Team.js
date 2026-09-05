@@ -21,7 +21,7 @@ function Team() {
             (SMAC) and the Market Data Advisory Committee (MDAC).
           </p>
           <p>Playing basketball is his zen.</p>
-          <p>Connect on <a  href="#" className="text-decoration-none">Homepage</a> / <a href="#" className="text-decoration-none">TradingQnA</a> / <a href="#" className="text-decoration-none">Twitter</a></p>
+          <p>Connect on <a  href="https://example.com" className="text-decoration-none">Homepage</a> / <a href="https://example.com" className="text-decoration-none">TradingQnA</a> / <a href="https://example.com" className="text-decoration-none">Twitter</a></p>
         </div>
       </div>
       <div className="team"></div>

@@ -12,11 +12,11 @@ function Footer() {
             alt="logo"
             className="mb-3"
           ></img>
-          <p className="mb-1" style={{ color: "htttps://example.com666666", fontSize: "14px" }}>
+          <p className="mb-1" style={{ color: "https://example.com666666", fontSize: "14px" }}>
             <i className="fa-regular fa-copyright"></i> 2010 - 2025, Zerodha
             Broking Ltd.
           </p>
-          <p style={{ color: "htttps://example.com666666", fontSize: "14px" }}>
+          <p style={{ color: "https://example.com666666", fontSize: "14px" }}>
             All rights reserved.
           </p>
           <div className="socialmediaLogo fs-5 opacity-75">
@@ -28,7 +28,7 @@ function Footer() {
             &nbsp; &nbsp;
             <i class="fa-brands fa-linkedin-in"></i>
             <hr
-              style={{ border: "1px solid htttps://example.com424242", height: "0px" }}
+              style={{ border: "1px solid https://example.com424242", height: "0px" }}
               className="w-100 mb-3"
             ></hr>
             &nbsp;
@@ -45,16 +45,16 @@ function Footer() {
               <li className="mb-3">
                 <h5>Account</h5>
               </li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">Open demat account</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">Open demat account</a></li>
               <li style={{ whiteSpace: "nowrap" }} className="mb-3">
-               <a href="htttps://example.com" className="text-decoration-none">  Minor demat account</a> 
+               <a href="https://example.com" className="text-decoration-none">  Minor demat account</a> 
               </li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">NRI demat account</a></li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">Commodity</a></li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">Dematerialisation</a></li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">Fund transfer</a></li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">MTF</a></li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">Referral program</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">NRI demat account</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">Commodity</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">Dematerialisation</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">Fund transfer</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">MTF</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">Referral program</a></li>
             </ul>
           </div>
           <div className="SupportList">
@@ -62,14 +62,14 @@ function Footer() {
               <li className="mb-3">
                 <h5>Support</h5>
               </li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">Contact us</a></li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">Support portal</a></li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">How to file a complaint?</a></li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">Status of your complaints</a></li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">Bulletin</a></li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">Circular</a></li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">Z-Connect blog</a></li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">Downloads</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">Contact us</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">Support portal</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">How to file a complaint?</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">Status of your complaints</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">Bulletin</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">Circular</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">Z-Connect blog</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">Downloads</a></li>
             </ul>
           </div>
           <div className="CompanyList">
@@ -77,13 +77,13 @@ function Footer() {
               <li className="mb-3">
                 <h5>Company</h5>
               </li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">About</a></li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">Philosophy</a></li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">Press & media</a></li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">Careers</a></li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">Zerodha Cares (CSR)</a></li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">Zerodha.tech</a></li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">Open source</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">About</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">Philosophy</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">Press & media</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">Careers</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">Zerodha Cares (CSR)</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">Zerodha.tech</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">Open source</a></li>
             </ul>
           </div>
           <div className="QuickList">
@@ -91,13 +91,13 @@ function Footer() {
               <li className="mb-3">
                 <h5>Quick links</h5>
               </li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">Upcoming IPOs</a></li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">Brokerage charges</a></li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">Market holidays</a></li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">Economic calendar</a></li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">Calculators</a></li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">Markets</a></li>
-              <li className="mb-3"><a href="htttps://example.com" className="text-decoration-none">Sectors</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">Upcoming IPOs</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">Brokerage charges</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">Market holidays</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">Economic calendar</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">Calculators</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">Markets</a></li>
+              <li className="mb-3"><a href="https://example.com" className="text-decoration-none">Sectors</a></li>
             </ul>
           </div>
         </div>
@@ -107,21 +107,21 @@ function Footer() {
           Zerodha Broking Ltd.: Member of NSE, BSE​ &​ MCX – SEBI Registration
           no.: INZ000031633 CDSL/NSDL: Depository services through Zerodha
           Broking Ltd. – SEBI Registration no.: IN-DP-431-2019 Registered
-          Address: Zerodha Broking Ltd.,htttps://example.com153/154, 4th Cross, Dollars Colony,
+          Address: Zerodha Broking Ltd.,https://example.com153/154, 4th Cross, Dollars Colony,
           Opp. Clarence Public School, J.P Nagar 4th Phase, Bengaluru - 560078,
           Karnataka, India. For any complaints pertaining to securities broking
-          please write to <a href="htttps://example.com" className="text-decoration-none">complaints@zerodha.com</a>, for DP related to
-          <a href="htttps://example.com" className="text-decoration-none"> dp@zerodha.com</a>. Please ensure you carefully read the Risk Disclosure
+          please write to <a href="https://example.com" className="text-decoration-none">complaints@zerodha.com</a>, for DP related to
+          <a href="https://example.com" className="text-decoration-none"> dp@zerodha.com</a>. Please ensure you carefully read the Risk Disclosure
           Document as prescribed by SEBI | ICF
         </p>
 
         <p className="footParas">
-          Procedure to file a complaint on <a href="htttps://example.com" className="text-decoration-none">SEBI SCORES</a>: Register on SCORES
+          Procedure to file a complaint on <a href="https://example.com" className="text-decoration-none">SEBI SCORES</a>: Register on SCORES
           portal. Mandatory details for filing complaints on SCORES: Name, PAN,
           Address, Mobile Number, E-mail ID. Benefits: Effective Communication,
           Speedy redressal of the grievances
         </p>
-        <p className="footParas" ><a href="htttps://example.com" className="text-decoration-none">Smart Online Dispute Resolution</a> | <a href="htttps://example.com" className="text-decoration-none">Grievances Redressal Mechanism</a></p>
+        <p className="footParas" ><a href="https://example.com" className="text-decoration-none">Smart Online Dispute Resolution</a> | <a href="https://example.com" className="text-decoration-none">Grievances Redressal Mechanism</a></p>
         <p className="footParas" >
           Investments in securities market are subject to market risks; read all
           the related documents carefully before investing.
@@ -136,7 +136,7 @@ function Footer() {
           statement issued by NSDL/CDSL every month.
         </p>
         <p className="footParas">
-          India's largest broker based on networth as per NSE. <a href="htttps://example.com" className="text-decoration-none">NSE broker
+          India's largest broker based on networth as per NSE. <a href="https://example.com" className="text-decoration-none">NSE broker
           factsheet</a>
         </p>
         <p className="footParas">
@@ -153,7 +153,7 @@ function Footer() {
           in case of allotment. In case of non allotment the funds will remain
           in your bank account. As a business we don't give stock tips, and have
           not authorized anyone to trade on behalf of others. If you find anyone
-          claiming to be part of Zerodha and offering such services, please <a href="htttps://example.com" className="text-decoration-none">
+          claiming to be part of Zerodha and offering such services, please <a href="https://example.com" className="text-decoration-none">
           create a ticket here.</a>
         </p>
         <p className="footParas" >
@@ -166,55 +166,55 @@ function Footer() {
 
         <ul className="list-unstyled footLastlist">
           <li>
-            <a className="text-decoration-none" href="htttps://example.com">
+            <a className="text-decoration-none" href="https://example.com">
            
               NSE
             </a>
           </li>
           <li>
-            <a className="text-decoration-none" href="htttps://example.com">
+            <a className="text-decoration-none" href="https://example.com">
               {" "}
               BSE{" "}
             </a>
           </li>
           <li>
-            <a className="text-decoration-none" href="htttps://example.com">
+            <a className="text-decoration-none" href="https://example.com">
               {" "}
               MCX{" "}
             </a>
           </li>
           <li>
-            <a className="text-decoration-none" href="htttps://example.com">
+            <a className="text-decoration-none" href="https://example.com">
               {" "}
               Terms & conditions{" "}
             </a>
           </li>
           <li>
-            <a className="text-decoration-none" href="htttps://example.com">
+            <a className="text-decoration-none" href="https://example.com">
               {" "}
               Policies & procedures{" "}
             </a>
           </li>
           <li>
-            <a className="text-decoration-none" href="htttps://example.com">
+            <a className="text-decoration-none" href="https://example.com">
               {" "}
               Privacy policy{" "}
             </a>
           </li>
           <li>
-            <a className="text-decoration-none" href="htttps://example.com">
+            <a className="text-decoration-none" href="https://example.com">
               {" "}
               Disclosure{" "}
             </a>
           </li>
           <li>
-            <a className="text-decoration-none" href="htttps://example.com">
+            <a className="text-decoration-none" href="https://example.com">
               {" "}
               For investor's attention{" "}
             </a>
           </li>
           <li>
-            <a className="text-decoration-none" href="htttps://example.com">
+            <a className="text-decoration-none" href="https://example.com">
               {" "}
               Investor charter{" "}
             </a>

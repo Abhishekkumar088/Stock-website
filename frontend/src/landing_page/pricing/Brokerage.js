@@ -4,13 +4,13 @@ function Brokerage() {
   return (
     <div className="container">
       <div className="link-tags d-flex gap-5">
-        <a href="#" className="text-decoration-none">
+        <a href="https://example.com" className="text-decoration-none">
           <h3>Equity</h3>
         </a>
-        <a href="#" className="text-decoration-none">
+        <a href="https://example.com" className="text-decoration-none">
           <h3>Currency</h3>
         </a>
-        <a href="#" className="text-decoration-none">
+        <a href="https://example.com" className="text-decoration-none">
           <h3>Commodity</h3>
         </a>
       </div>

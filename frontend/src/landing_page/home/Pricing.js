@@ -12,7 +12,7 @@ function Pricing() {
             We pioneered the concept of discount broking and price transparency
             in India. Flat fees and no hidden charges.
           </p>
-          <a href="#" className="text-decoration-none">
+          <a href="https://example.com" className="text-decoration-none">
             See pricing <i className="fa-solid fa-arrow-right"></i>{" "}
           </a>
         </div>

@@ -21,7 +21,7 @@ function Education() {
             Varsity, the largest online stock market education book in the world
             covering everything from the basics to advanced trading.
           </p>
-          <a href="#" className="text-decoration-none">
+          <a href="https://example.com" className="text-decoration-none">
             Varsity <i className="fa-solid fa-arrow-right"></i>
           </a>
           <br></br>
@@ -29,7 +29,7 @@ function Education() {
             TradingQ&A, the most active trading and investment community in
             India for all your market related queries.
           </p>
-          <a href="#" className="text-decoration-none mb-2">
+          <a href="https://example.com" className="text-decoration-none mb-2">
             TradingQ&A <i className="fa-solid fa-arrow-right"></i>
           </a>
         </div>
