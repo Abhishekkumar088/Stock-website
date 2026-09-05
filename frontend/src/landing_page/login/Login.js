@@ -34,7 +34,7 @@ const Login = () => {
         handleSuccess(message);
         setInputValue({ email: "", password: "" }); // ✅ Fix 3: reset only on success
          setTimeout(() => {
-             window.location.href = "http://localhost:3000/";
+             window.location.href = "https://example.com";
 }, 1000);
       } else {
         handleError(message);

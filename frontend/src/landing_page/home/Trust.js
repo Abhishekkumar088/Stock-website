@@ -49,6 +49,7 @@ function Trust() {
           <img
             src="media/images/heroCompanies.png"
             className="companyImage m-4"
+            alt="image loading"
           ></img>
           <p className="links">
             <a href="https://example.com" className="text-decoration-none">
@@ -63,7 +64,7 @@ function Trust() {
       </div>
       <div className="press">
         <a href="https://example.com">
-          <img src="media/images/pressImage.png"></img>
+          <img src="media/images/pressImage.png" alt="image loading"></img>
         </a>
       </div>
     </div>
