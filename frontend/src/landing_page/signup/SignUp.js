@@ -27,7 +27,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3002/signup",
+       `${process.env.REACT_APP_API_URL}/signup`,
         { ...inputValue },
         { withCredentials: true },
       );
@@ -36,7 +36,7 @@ const Signup = () => {
         handleSuccess(message);
         setInputValue({ email: "", password: "", username: "" }); // ✅ Fix 3: reset only on success
         setTimeout(() => {
-             window.location.href = "http://localhost:3000/";
+             window.location.href = "https://stock-website-dashboard.netlify.app/";
 }, 1000);
       } else {
         handleError(message);

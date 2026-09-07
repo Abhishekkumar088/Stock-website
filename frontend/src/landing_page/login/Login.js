@@ -25,7 +25,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3002/login", // ✅ Fix 2: was 4000, signup uses 3002
+        `${process.env.REACT_APP_API_URL}/login`, // ✅ Fix 2: was 4000, signup uses 3002
         { ...inputValue },
         { withCredentials: true }
       );
@@ -34,7 +34,7 @@ const Login = () => {
         handleSuccess(message);
         setInputValue({ email: "", password: "" }); // ✅ Fix 3: reset only on success
          setTimeout(() => {
-             window.location.href = "https://example.com";
+             window.location.href = "https://stock-website-dashboard.netlify.app/";
 }, 1000);
       } else {
         handleError(message);

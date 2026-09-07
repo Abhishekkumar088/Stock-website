@@ -10,7 +10,7 @@ const SellActionWindow = ({ uid }) => {
   const { closeSellWindow } = useContext(GeneralContext); // ✅ use closeSellWindow
 
   const handleSellClick = async () => {
-    await axios.post("http://localhost:3002/sellStocks", {
+    await axios.post(`${process.env.REACT_APP_API_URL}/sellStocks`, {
       name: uid,
       qty: stockQty,
       mode: "SELL",
