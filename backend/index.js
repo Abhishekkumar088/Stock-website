@@ -14,9 +14,8 @@ const PORT = process.env.PORT || 3002;
 const url = process.env.MONGO_URL;
 
 const app = express();
-
 app.use(cors({
-    origin:"https://stock-website-home.netlify.app/",
+    origin:"https://stock-website-home.netlify.app",
     credentials:true,
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
