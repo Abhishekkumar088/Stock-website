@@ -14,9 +14,20 @@ const PORT = process.env.PORT || 3002;
 const url = process.env.MONGO_URL;
 
 const app = express();
+const allowedOrigins = [
+    "https://stock-website-home.netlify.app",
+    "https://stock-website-dashboard.netlify.app"
+];
+
 app.use(cors({
-    origin:"https://stock-website-home.netlify.app",
-    credentials:true,
+    origin: function (origin, callback) {
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true);
+        } else {
+            callback(new Error("Not allowed by CORS"));
+        }
+    },
+    credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
 }));
@@ -24,6 +35,11 @@ app.use(express.json());   // use built-in instead of body-parser
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use("/", authRoute);
+
+
+app.get("/", (req, res) => {
+  res.send("Welcome to the Stock Management API!");
+});
 
 app.get("/allHoldings", async (req, res) => {
   let allHoldings = await HoldingsModel.find({});
