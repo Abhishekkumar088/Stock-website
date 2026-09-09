@@ -38,7 +38,7 @@ app.use("/", authRoute);
 
 
 app.get("/", (req, res) => {
-  res.send("Welcome to the Stock Management API!");
+  res.redirect("https://stock-website-home.netlify.app");
 });
 
 app.get("/allHoldings", async (req, res) => {
