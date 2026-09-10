@@ -122,28 +122,29 @@ const Menu = () => {
           </li>
         </ul>
         <hr />
-        <div className="dropdown">
-          <div
-            className="d-flex align-items-center btn btn-secondary dropdown-toggle"
-            onClick={handleProfileClick}
-            role="button"
-          >
-            <div className="avatar me-2">
-              {username ? username.slice(0, 2).toUpperCase() : "ZU"}
-            </div>
-            <span>{username || "Guest"}</span>
-          </div>
+       <div className="dropdown">
+  <div
+    className="profile-toggle"
+    onClick={handleProfileClick}
+    role="button"
+  >
+    <div className="avatar">
+      {username ? username.slice(0, 2).toUpperCase() : "ZU"}
+    </div>
+    <span className="username-text">{username || "Guest"}</span>
+    <span className="caret">▾</span>
+  </div>
 
-          {isProfileDropdownOpen && (
-            <ul className="dropdown-menu show">
-              <li>
-                <button className="dropdown-item" onClick={handleLogout}>
-                  Logout
-                </button>
-              </li>
-            </ul>
-          )}
-        </div>
+  {isProfileDropdownOpen && (
+    <ul className="dropdown-menu show profile-menu">
+      <li>
+        <button className="dropdown-item" onClick={handleLogout}>
+          Logout
+        </button>
+      </li>
+    </ul>
+  )}
+</div>
       </div>
     </div>
   );
