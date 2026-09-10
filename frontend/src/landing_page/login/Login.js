@@ -29,9 +29,9 @@ const Login = () => {
         { ...inputValue },
         { withCredentials: true }
       );
-      const { success, message } = data;
+      const { success, message, username } = data;
       if (success) {
-        handleSuccess(message);
+        handleSuccess(`Welcome back, ${username}!`); // ✅ Fix 4: show username on success
         setInputValue({ email: "", password: "" }); // ✅ Fix 3: reset only on success
          setTimeout(() => {
              window.location.href = "https://stock-website-dashboard.netlify.app/";
