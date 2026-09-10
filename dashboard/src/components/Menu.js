@@ -122,13 +122,13 @@ const Menu = () => {
           </li>
         </ul>
         <hr />
-        <div className="profile" onClick={handleProfileClick}>
+        <div className="dropdown" onClick={handleProfileClick}>
           <div className="avatar">
             {username ? username.slice(0, 2).toUpperCase() : "ZU"}
           </div>
-          <p className="username">{username || "Guest"}</p>
+          <p className="dropdown-menu btn btn-secondary dropdown-toggle">{username || "Guest"}</p>
           {isProfileDropdownOpen && (
-            <div className="profile-dropdown">
+            <div className="dropdown-item">
               <button onClick={handleLogout}>Logout</button>
             </div>
           )}
