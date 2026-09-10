@@ -1,6 +1,7 @@
 const { UserModel } = require("../model/UserModel");
 const {createSecretToken} = require("../util/SecretToken");
 
+
 const bcrypt = require("bcryptjs");
 
 module.exports.Signup = async (req, res, next) => {
@@ -13,8 +14,9 @@ module.exports.Signup = async (req, res, next) => {
     const user = await UserModel.create({ email, password, username, createdAt });
     const token = createSecretToken(user._id);
     res.cookie("token", token, {
-      withCredentials: true,
       httpOnly: false,
+      secure: true,        // required for SameSite: None
+      sameSite: "none",
     });
     res
       .status(201)
@@ -41,8 +43,9 @@ module.exports.Login = async (req, res, next) => {
     }
      const token = createSecretToken(user._id);
      res.cookie("token", token, {
-       withCredentials: true,
-       httpOnly: false,
+      httpOnly: false, 
+      secure: true,
+       sameSite: "none",
      });
      res.status(201).json({ message: "User logged in successfully", success: true });
      next()
@@ -50,3 +53,4 @@ module.exports.Login = async (req, res, next) => {
     console.error(error);
   }
 };
+

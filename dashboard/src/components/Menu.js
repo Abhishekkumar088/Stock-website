@@ -1,10 +1,29 @@
-import React, { useState } from "react";
-
+import React, { useState, useEffect } from "react"; // ✅ added useEffect
 import { Link } from "react-router-dom";
+import axios from "axios"; // ✅ added axios import
 
 const Menu = () => {
   const [selectedMenu, setSelectedMenu] = useState(0);
   const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
+  const [username, setUsername] = useState(""); // ✅ new state for username
+
+  // ✅ new: fetch logged-in user on component mount
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        const { data } = await axios.get(
+          `${process.env.REACT_APP_API_URL}/me`,
+          { withCredentials: true }
+        );
+        if (data.status) {
+          setUsername(data.user);
+        }
+      } catch (err) {
+        console.log("Not logged in or session expired");
+      }
+    };
+    fetchUser();
+  }, []);
 
   const handleMenuClick = (index) => {
     setSelectedMenu(index);
@@ -91,8 +110,12 @@ const Menu = () => {
         </ul>
         <hr />
         <div className="profile" onClick={handleProfileClick}>
-          <div className="avatar">ZU</div>
-          <p className="username">USERID</p>
+          {/* ✅ avatar now shows first 2 letters of username, falls back to "ZU" */}
+          <div className="avatar">
+            {username ? username.slice(0, 2).toUpperCase() : "ZU"}
+          </div>
+          {/* ✅ shows real username, falls back to "Guest" while loading/logged out */}
+          <p className="username">{username || "Guest"}</p>
         </div>
       </div>
     </div>
