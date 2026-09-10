@@ -13,7 +13,7 @@ const Menu = () => {
       try {
         const { data } = await axios.get(
           `${process.env.REACT_APP_API_URL}/me`,
-          { withCredentials: true }
+          { withCredentials: true },
         );
         if (data.status) {
           setUsername(data.user);
@@ -31,6 +31,19 @@ const Menu = () => {
 
   const handleProfileClick = (index) => {
     setIsProfileDropdownOpen(!isProfileDropdownOpen);
+  };
+
+  const handleLogout = async () => {
+    try {
+      await axios.post(
+        `${process.env.REACT_APP_API_URL}/logout`,
+        {},
+        { withCredentials: true },
+      );
+      window.location.href = "https://stock-website-home.netlify.app/";
+    } catch (err) {
+      console.log("Logout failed", err);
+    }
   };
 
   const menuClass = "menu";
@@ -110,12 +123,15 @@ const Menu = () => {
         </ul>
         <hr />
         <div className="profile" onClick={handleProfileClick}>
-          {/* ✅ avatar now shows first 2 letters of username, falls back to "ZU" */}
           <div className="avatar">
             {username ? username.slice(0, 2).toUpperCase() : "ZU"}
           </div>
-          {/* ✅ shows real username, falls back to "Guest" while loading/logged out */}
           <p className="username">{username || "Guest"}</p>
+          {isProfileDropdownOpen && (
+            <div className="profile-dropdown">
+              <button onClick={handleLogout}>Logout</button>
+            </div>
+          )}
         </div>
       </div>
     </div>

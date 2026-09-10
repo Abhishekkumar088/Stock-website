@@ -54,3 +54,13 @@ module.exports.Login = async (req, res, next) => {
   }
 };
 
+module.exports.Logout = (req, res) => {
+  res.cookie("token", "", {
+    httpOnly: false,
+    secure: true,
+    sameSite: "none",
+    expires: new Date(0), // expires immediately
+  });
+  res.status(200).json({ success: true, message: "Logged out successfully" });
+};
+
