@@ -311,7 +311,6 @@ hr {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 6px 10px;
   border-radius: 8px;
   cursor: pointer;
   background: none;
@@ -372,9 +371,6 @@ hr {
   background-color: #fdecea;
   color: #e53935;
 }
-
-
-
 
 
 
