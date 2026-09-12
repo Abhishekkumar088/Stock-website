@@ -13,7 +13,7 @@ const Signup = () => {
     password: "",
     username: "",
   });
-  const { email, password, user } = inputValue;
+  const { email, password, username } = inputValue;
 
   const handleOnChange = (e) => {
     const { name, value } = e.target;
@@ -72,7 +72,7 @@ const Signup = () => {
             type="text"
             name="username"
             id="username"
-            value={user}
+            value={username}
             placeholder="Enter your username"
             onChange={handleOnChange}
           />
