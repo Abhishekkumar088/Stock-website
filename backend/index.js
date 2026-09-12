@@ -41,20 +41,20 @@ app.get("/", (req, res) => {
   res.redirect("https://stock-website-home.netlify.app");
 });
 
-app.get("/allholdings", async (req, res) => {
+app.get("/allHoldings", async (req, res) => {
   try {
-    const allholdings = await HoldingsModel.find({});  
-    res.status(200).json(allholdings);
+    const allHoldings = await HoldingsModel.find({});  
+    res.status(200).json(allHoldings);
   } catch (err) {
     console.error("Error fetching holdings:", err);
     res.status(500).json({ message: "Internal server error!" });
   }
 });
 
-app.get("/allpositions", async (req, res) => {
+app.get("/allPositions", async (req, res) => {
   try {
-    const allpositions = await PositionsModel.find({});
-    res.status(200).json(allpositions);
+    const allPositions = await PositionsModel.find({});
+    res.status(200).json(allPositions);
   } catch (err) {
     console.error("Error fetching positions:", err);
     res.status(500).json({ message: "Internal server error!" });
