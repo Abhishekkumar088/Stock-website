@@ -41,7 +41,61 @@ app.get("/", (req, res) => {
   res.redirect("https://stock-website-home.netlify.app");
 });
 
+app.get("/allholdings", async (req, res) => {
+  try {
+    const allholdings = await HoldingsModel.find({});  
+    res.status(200).json(allholdings);
+  } catch (err) {
+    console.error("Error fetching holdings:", err);
+    res.status(500).json({ message: "Internal server error!" });
+  }
+});
 
+app.get("/allpositions", async (req, res) => {
+  try {
+    const allpositions = await PositionsModel.find({});
+    res.status(200).json(allpositions);
+  } catch (err) {
+    console.error("Error fetching positions:", err);
+    res.status(500).json({ message: "Internal server error!" });
+  }
+});
+app.post("/newPosition", async (req, res) => {
+  let newPosition = new PositionsModel({
+    name: req.body.name,
+    qty: req.body.qty,
+    price: req.body.price,
+    mode: req.body.mode,
+  });
+  await newPosition.save();
+  res.send("Position saved!");
+});
+app.post("/newHolding", async (req, res) => {
+  let newHolding = new HoldingsModel({
+    name: req.body.name,
+    qty: req.body.qty,
+    price: req.body.price,
+    mode: req.body.mode,
+  });
+  await newHolding.save();
+  res.send("Holding saved!");
+});
+
+app.post("/buyStocks", async (req, res) => {
+  try {
+    const { name, qty, } = req.body;
+
+    // Basic validation
+    if (!name || !qty || qty <= 0) {
+      return res.status(400).json({ message: "Invalid stock name or quantity!" });
+    }
+  } catch (err) {
+    console.error("Error buying stock:", err);
+    res.status(500).json({ message: "Internal server error!" });
+  }
+});
+
+    
 
 app.post("/newOrder", async (req, res) => {
   let newOrder = new OrdersModel({
