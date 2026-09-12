@@ -31,10 +31,9 @@ const Signup = () => {
         { ...inputValue },
         { withCredentials: true },
       );
-      const { success, message, username } = data;
+      const { success, message } = data;
       if (success) {
         handleSuccess(`Welcome, ${username}!`); // ✅ Fix 4: show username on success
-        console.log("Signup response:",data);
         setInputValue({ email: "", password: "", username: "" }); // ✅ Fix 3: reset only on success
         setTimeout(() => {
              window.location.href = "https://stock-website-dashboard.netlify.app/";
