@@ -5,6 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; // ✅ Fix 1: added missing CSS import
 import "./Signup.css";
 
+
 const Signup = () => {
   const navigate = useNavigate();
   const [inputValue, setInputValue] = useState({
@@ -19,6 +20,8 @@ const Signup = () => {
     setInputValue({ ...inputValue, [name]: value });
   };
 
+
+
   const handleError = (err) => toast.error(err, { position: "bottom-left" });
   const handleSuccess = (msg) =>
     toast.success(msg, { position: "bottom-right" });
@@ -31,9 +34,9 @@ const Signup = () => {
         { ...inputValue },
         { withCredentials: true },
       );
-      const { success, message } = data;
+      const { success, message,user } = data;
       if (success) {
-        handleSuccess(`Welcome, ${username}!`); // ✅ Fix 4: show username on success
+        handleSuccess(`Welcome, ${user}!`); // ✅ Fix 4: show username on success
         setInputValue({ email: "", password: "", username: "" }); // ✅ Fix 3: reset only on success
         setTimeout(() => {
              window.location.href = "https://stock-website-dashboard.netlify.app/";
