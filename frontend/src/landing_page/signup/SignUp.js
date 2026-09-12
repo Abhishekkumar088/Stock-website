@@ -13,7 +13,7 @@ const Signup = () => {
     password: "",
     username: "",
   });
-  const { email, password, username } = inputValue;
+  const { email, password, user } = inputValue;
 
   const handleOnChange = (e) => {
     const { name, value } = e.target;
@@ -26,21 +26,21 @@ const Signup = () => {
   const handleSuccess = (msg) =>
     toast.success(msg, { position: "bottom-right" });
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const { data } = await axios.post(
-       `${process.env.REACT_APP_API_URL}/signup`,
-        { ...inputValue },
-        { withCredentials: true },
-      );
-      const { success, message,user } = data;
-      if (success) {
-        handleSuccess(`Welcome, ${user}!`); // ✅ Fix 4: show username on success
-        setInputValue({ email: "", password: "", username: "" }); // ✅ Fix 3: reset only on success
-        setTimeout(() => {
-             window.location.href = "https://stock-website-dashboard.netlify.app/";
-}, 1000);
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      try {
+        const { data } = await axios.post(
+        `${process.env.REACT_APP_API_URL}/signup`,
+          { ...inputValue },
+          { withCredentials: true },
+        );
+        const { success, message,user } = data;
+        if (success) {
+          handleSuccess(`Welcome, ${user}!`); // ✅ Fix 4: show username on success
+          setInputValue({ email: "", password: "", username: "" }); // ✅ Fix 3: reset only on success
+          setTimeout(() => {
+              window.location.href = "https://stock-website-dashboard.netlify.app/";
+  }, 1000);
       } else {
         handleError(message);
       }
@@ -72,7 +72,7 @@ const Signup = () => {
             type="text"
             name="username"
             id="username"
-            value={username}
+            value={user}
             placeholder="Enter your username"
             onChange={handleOnChange}
           />
